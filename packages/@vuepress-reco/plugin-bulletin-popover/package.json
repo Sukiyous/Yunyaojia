@@ -27,7 +27,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "tsc --build tsconfig.build.json",
     "clean": "rimraf lib *.tsbuildinfo",
-    "copy": "cpx \"src/**/*.{d.ts,vue,scss}\" lib"
+    "copy": "cpx \"src/**/*.{d.ts,vue,scss,css,svg,js,ts,png,jpg}\" lib"
   },
   "bugs": {
     "url": "https://github.com/vuepress-reco/vuepress-theme-reco/issues"
