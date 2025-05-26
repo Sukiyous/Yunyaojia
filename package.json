@@ -16,7 +16,7 @@
     "dev": "pnpm -r --parallel build --watch & pnpm --parallel copy --watch & pnpm example:dev",
     "docs:build": "vuepress build docs",
     "docs:deploy": "bash scripts/docs-deploy.sh",
-    "docs:dev": "pnpm -r --parallel build --watch & pnpm --parallel copy --watch & vuepress dev docs",
+    "docs:dev": "concurrently \"pnpm -r --parallel build --watch\" \"pnpm --parallel copy --watch\" \"vuepress dev docs\"",
     "example:build": "vuepress build example --clean-cache",
     "example:dev": "DEBUG=vuepress* vuepress dev example --clean-cache",
     "lint": "eslint --ext .js,.ts,.vue .",

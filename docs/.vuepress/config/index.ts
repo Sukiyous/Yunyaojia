@@ -40,7 +40,7 @@ export const themeConfig: RecoThemeData = {
     },
     {
       icon: 'IconRevili',
-      link: 'www.baidu.com'
+      link: 'https://www.baidu.com'  // 添加了https://前缀
     }
   ],
 }
