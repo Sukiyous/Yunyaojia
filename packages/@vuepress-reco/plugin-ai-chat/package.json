@@ -1,5 +1,5 @@
 {
-  "name": "@vuepress-reco/vuepress-plugin-ai-chat",
+  "name": "@vuepress-reco/plugin-ai-chat",
   "version": "2.0.0",
   "description": "AI聊天插件 - 为VuePress站点提供基于文档内容的智能问答功能",
   "keywords": [

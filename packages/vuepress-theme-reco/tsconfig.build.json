@@ -16,5 +16,6 @@
   "include": ["./src"],
   "references": [
     { "path": "../@vuepress-reco/plugin-page/tsconfig.build.json" },
+    { "path": "../@vuepress-reco/plugin-ai-chat/tsconfig.build.json" }
   ]
 }

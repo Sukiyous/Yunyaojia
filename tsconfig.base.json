@@ -22,6 +22,9 @@
       "@theme/*": [
         "./packages/vuepress-theme-reco/src/client/components/*"
       ],
+      "@vuepress-reco/plugin-ai-chat": [
+        "./packages/@vuepress-reco/plugin-ai-chat/src/node/index.ts"
+      ]
     }
   }
 }
