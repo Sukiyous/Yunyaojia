@@ -2,13 +2,13 @@
   "name": "vuepress-theme-reco",
   "version": "2.0.0-rc.26",
   "description": "> TODO: description",
-  "homepage": "https://github.com/recoluan/vuepress-theme-reco#readme",
+  "homepage": "https://github.com/Sukiyous/Yunyaojia#readme",
   "bugs": {
-    "url": "https://github.com/recoluan/vuepress-theme-reco/issues"
+    "url": "https://github.com/Sukiyous/Yunyaojia/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/recoluan/vuepress-theme-reco.git"
+    "url": "git+https://github.com/Sukiyous/Yunyaojia.git"
   },
   "license": "MIT",
   "author": "reco_luan <recoluan@qq.com>",
@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "tsc --build tsconfig.build.json",
+    "build": "tsc --build tsconfig.build.json && pnpm copy",
     "clean": "rimraf lib *.tsbuildinfo",
     "copy": "cpx \"src/**/*.{d.ts,vue,scss,css,svg,png,jpg}\" lib"
   },

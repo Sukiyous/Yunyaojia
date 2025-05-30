@@ -22,7 +22,7 @@ export const themeConfig: RecoThemeData = {
   colorMode: 'light',//主题颜色默认是浅色
   logo: '/logo.png',
   author: 'Doujc',//作者
-  docsRepo: 'https://github.com/vuepress-reco/vuepress-theme-reco',//文档仓库
+  docsRepo: 'https://github.com/Sukiyous/Yunyaojia',//文档仓库
   docsBranch: 'main',//文档分支
   docsDir: '/docs',//文档目录
   algolia: {
