@@ -63,7 +63,8 @@
     "postcss-each": "1.1.0",
     "postcss-import": "14.0.2",
     "tailwindcss": "3.4.4",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vuepress-theme-reco": "workspace:*"
   },
   "devDependencies": {
     "eslint-config-vuepress": "^5.2.4",
