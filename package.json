@@ -14,7 +14,7 @@
     "clean:modules": "rm -rf **/node_modules",
     "commit": "git add . && git-cz",
     "dev": "pnpm -r --parallel build --watch & pnpm --parallel copy --watch & pnpm example:dev",
-    "docs:build": "vuepress build docs",
+    "docs:build": "vuepress build docs && echo aidou521.top > docs/.vuepress/dist/CNAME",
     "docs:deploy": "bash scripts/docs-deploy.sh",
     "docs:dev": "concurrently \"pnpm -r --parallel build --watch\" \"pnpm --parallel copy --watch\" \"vuepress dev docs\"",
     "example:build": "vuepress build example --clean-cache",
