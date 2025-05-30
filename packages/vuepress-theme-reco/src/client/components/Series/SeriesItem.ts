@@ -1,4 +1,4 @@
-import { h } from 'vue'
+import { h, ref } from 'vue'
 import { IconFolder } from '@components/icons/index.js'
 import { useRoute } from 'vuepress/client'
 
@@ -48,27 +48,25 @@ const isActiveItem = (
   return false
 }
 
+// 全局唯一展开分组 key
+const expandedKey = ref<string | null>(null)
+
+const getKey = (item: ResolvedSeriesItem) => item.link || item.text
+
 const togglecollapsible = (e, item, level) => {
   if (level !== 1) return
-
-  item.collapsible = !!!item.collapsible
-
-  const currentNode = e.target.closest('.series-heading')
-  const arrowNode = currentNode.querySelector('.arrow')
-  const nextNode = currentNode.nextElementSibling
-
-  if (item.collapsible) {
-    arrowNode.classList.remove('down')
-    arrowNode.classList.add('right')
-    nextNode.style.display = 'none'
-  } else {
-    arrowNode.classList.remove('right')
-    arrowNode.classList.add('down')
-    nextNode.style.display = 'block'
-  }
+  const key = getKey(item)
+  expandedKey.value = expandedKey.value === key ? null : key
 }
 
 const renderItem = (item: ResolvedSeriesItem, level: number, props: VNode['props']): VNode => {
+  const key = getKey(item)
+  // 只有当前分组 key === expandedKey 时展开，否则折叠
+  if (level === 1 && typeof item.collapsible === 'undefined') {
+    item.collapsible = expandedKey.value !== key
+  } else if (level === 1) {
+    item.collapsible = expandedKey.value !== key
+  }
   if (item.link) {
     return h(Link, {
       ...props,
