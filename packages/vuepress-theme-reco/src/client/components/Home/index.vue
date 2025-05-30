@@ -17,6 +17,7 @@ import Comment from './Comment.vue'
 import Features from './Features.vue'
 import MdContent from './MdContent.vue'
 import BannerBrand from './BannerBrand.vue'
+import Footer from './Footer.vue'
 // AIChat已移动到独立插件
 
 import { RecoThemeHomePageFrontmatter } from '../../../types'
@@ -31,6 +32,7 @@ export default defineComponent({
     MdContent,
     Comment,
     Features,
+    Footer,
   }
 })
 </script>

@@ -11,13 +11,12 @@ aiChat:
 customBanner:
   bgImage: '/bg.svg'
   title: Yunyaojia
-  description: '一个可以随时解决问题的知识库'
-  tagline: 哒哒哒哒哒哒哒
+  description: '云药家使用指南'
+  tagline: 一个可以随时解决问题的知识库
   buttons:
     - { text: 操作指南, link: '/docs/guide/introduce' }
     - { text: 解决报错, link: '/docs/theme/series', type: 'plain' }
-footer:
-  startYear: 2025
+
 features:
 - title: 过去
   details: 哒哒哒哒哒哒哒

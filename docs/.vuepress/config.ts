@@ -10,7 +10,7 @@ export default defineUserConfig({
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN',
-      title: '云药家使用指南',//浏览器显示的名字
+      title: '云药家',//浏览器显示的名字
       description: '知识分享',
     }
   },

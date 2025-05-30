@@ -21,14 +21,14 @@ export const themeConfig: RecoThemeData = {
   },
   colorMode: 'light',//主题颜色默认是浅色
   logo: '/logo.png',
-  author: 'reco_luan',
-  docsRepo: 'https://github.com/vuepress-reco/vuepress-theme-reco',
-  docsBranch: 'main',
-  docsDir: '/docs',
+  author: 'Doujc',//作者
+  docsRepo: 'https://github.com/vuepress-reco/vuepress-theme-reco',//文档仓库
+  docsBranch: 'main',//文档分支
+  docsDir: '/docs',//文档目录
   algolia: {
-    appId: '38R2J3MTQC',
-    apiKey: '583d3caf699630b08a9bc2d12d599701',
-    indexName: 'v2-vuepress-reco-recoluan',
+    appId: '38R2J3MTQC',//algolia应用id           
+    apiKey: '583d3caf699630b08a9bc2d12d599701',//algoliaapikey
+    indexName: 'v2-vuepress-reco-recoluan',//algolia索引名称
     // inputSelector: '### REPLACE ME ####',
     // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
     // debug: false // Set debug to true if you want to inspect the dropdown

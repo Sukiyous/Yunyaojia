@@ -3,8 +3,12 @@ export const series = {
   //指南页面侧边栏设置
   '/docs/guide/': [
     {
+      text:'介绍',
+      children:['introduce'],
+    },
+    {
       text:'基础档案',
-      children:['introduce','getting-started'],
+      children:['getting-started'],
     },
     
     {

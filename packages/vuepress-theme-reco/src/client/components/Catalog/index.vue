@@ -12,7 +12,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { usePageCatalog, useThemeLocaleData } from '@composables/index.js'
-import { CatalogItem } from './CatalogItem.js'
+import CatalogItem from './CatalogItem.vue'
 
 const { catalog } = usePageCatalog()
 const themeConfig = useThemeLocaleData()
