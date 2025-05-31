@@ -1,0 +1,56 @@
+.center {
+  text-align: center;
+  background: #f5f7fa;
+  border: 1px solid #b3c6e0;
+  border-radius: 8px;
+  padding: 24px 16px;
+  margin: 24px 0;
+  color: #222;
+  font-size: 1.1em;
+  /* 可选：让内容宽度自适应 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center img {
+  display: block;
+  margin: 0 auto;
+}
+
+.custom-block.note {
+  background: #e8f4fd;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  color: #222;
+  position: relative;
+}
+.custom-block.note .custom-block-title {
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 8px;
+}
+
+.tag-list {
+  margin: 16px 0 24px 0;
+  display: flex;
+  gap: 12px;
+}
+.tag {
+  display: inline-block;
+  background: #e0f7fa;
+  color: #00796b;
+  border-radius: 16px;
+  padding: 2px 14px;
+  font-size: 0.95em;
+  font-weight: 500;
+  border: 1px solid #4dd0e1;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition: background 0.2s, color 0.2s;
+}
+.tag:hover {
+  background: #4dd0e1;
+  color: #fff;
+} 

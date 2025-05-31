@@ -52,7 +52,6 @@
     "@types/vfile": "^4.0.0",
     "@vuepress-reco/shared": "workspace:*",
     "@vuepress-reco/tailwindcss-config": "workspace:*",
-    "vuepress-theme-reco": "workspace:*",
     "@vuepress/bundler-vite": "2.0.0-rc.20",
     "@vuepress/bundler-webpack": "2.0.0-rc.20",
     "commitizen": "^4.3.1",
@@ -82,6 +81,6 @@
   },
   "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977",
   "dependencies": {
-    "vuepress-theme-reco": "workspace:*"
+    "@vuepress/plugin-container": "2.0.0-rc.28"
   }
 }

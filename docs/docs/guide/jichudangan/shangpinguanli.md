@@ -1,55 +1,51 @@
 ---
 title: 商品管理
-date: 2025-05-31 00:00:00
+icon: mdi:tooltip-text-outline
+createTime: 2025/05/15 10:00:00
+permalink: /guide/jichudangan/shangpinguanli/
+tags:
+  - 指南
+  - 商品管理
 ---
 
-## 快速开始
 
-::: tip
-前往 [这里](/docs/guide/gui-builder.html) 体验全新可视化搭建脚手架。
+## 药品对码
+
+打开云药家功能菜单，找到 **【基础档案】-【商品管理】** 并点击打开进去如下页面：
+::: center
+![图片描述](/images/goods/duima.png)
 :::
 
-**npx**
+::: details 药品操作的地方怎么没有对码按钮？
+这里大家自己打开的页面可能和我这里截图的大部分都长得一样，唯一有差异的地方应该是在 ==药品操作== 部分，上述图片中的 ==标价== ，在大家自己的电脑上应该显示的是 ==对码== ，请不要怀疑系统出了什么问题，这是正常的，因为大家刚拿到系统还未进行对码操作，所以那里会显示 ==对码==
+:::
+现在请找到商品管理中从上到下显示的第一个药品，然后找到右侧药品操作下的对码字样，单击打开会显示一个进行医保对码的界面，界面如下：
+::: center
+![图片描述](/images/goods/duima1.png)
+:::
 
-```bash
-# 初始化，并选择 2.x
-npx @vuepress-reco/theme-cli init
-```
+::: center
+![图片描述](/images/goods/duima2.png)
+:::
 
-**npm**
+::: note 注释信息
 
-```bash
-# 初始化，并选择 2.x
-npm install @vuepress-reco/theme-cli@1.0.7 -g
-theme-cli init
-```
+- 如果在商品对码页面搜索药品的时候，点查询后没有对应信息，请删除名称、规格等信息，只保留 ==批准文号==去搜索
+- 批准文号要严格按照药盒子上的信息填写，==国药准字== 这四个字请输入完整再去查询
+:::
 
-**yarn**
+同时你也可以通过这样的方式进行药品对码操作，流程如下：
+::: center
+![图片描述](/images/goods/duima3.png)
+:::
 
-```bash
-# 初始化，并选择 2.x
-yarn global add @vuepress-reco/theme-cli@1.0.7
-theme-cli init
-```
+::: center
+![图片描述](/images/goods/duima4.png)
+:::
+可以发现在这里你可以修改你的药品信息，包括但不限于分类、条码、名称、规格...这些都需要大家自己花时间、花精力去更正。那么我们拿到系统后的第一步就是在商品管理这将自己系统里所有的药品依次进行对码操作，没有批量对码功能的支持，请大家自行安排好时间完成药品对码操作。
 
-## 手动安装
+::: tip
 
-```bash
-npm install vuepress@next vuepress-theme-reco@next --save-dev
+未完待续......
 
-# or
-yarn add vuepress@next vuepress-theme-reco@next
-```
-
-```ts
-// .vuepress/config.ts
-
-import { defineUserConfig } from 'vuepress'
-import { recoTheme } from 'vuepress-theme-reco'
-
-export default defineUserConfig({
-  theme: recoTheme({
-    // options
-  })
-})
-```
+:::

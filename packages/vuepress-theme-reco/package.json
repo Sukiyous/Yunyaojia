@@ -27,15 +27,15 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "tsc --build tsconfig.build.json && pnpm copy",
     "clean": "rimraf lib *.tsbuildinfo",
-    "copy": "cpx \"src/**/*.{d.ts,vue,scss,css,svg,png,jpg}\" lib"
+    "copy": "npx cpx2 \"src/**/*.{d.ts,vue,scss,css,svg,png,jpg}\" lib"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
+    "@vuepress-reco/plugin-ai-chat": "workspace:*",
     "@vuepress-reco/shared": "workspace:*",
     "@vuepress-reco/tailwindcss-config": "workspace:*",
-    "@vuepress-reco/plugin-ai-chat": "workspace:*",
     "@vuepress-reco/vuepress-plugin-bulletin-popover": "workspace:*",
     "@vuepress-reco/vuepress-plugin-code-copy": "workspace:*",
     "@vuepress-reco/vuepress-plugin-comments": "workspace:*",
@@ -66,6 +66,7 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "cpx2": "^8.0.0",
     "eslint-config-vuepress": "^5.2.4",
     "eslint-config-vuepress-typescript": "^4.10.1",
     "prettier": "2.2.1",

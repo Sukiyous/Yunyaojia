@@ -13,11 +13,7 @@
     </Xicons>
 
     <Xicons v-if="tags.length > 0" :icon="IconTag">
-      <router-link
-        v-for="({ label, pathValue }) in tags"
-        :to="`/tags/${pathValue}/1.html`"
-        :key="pathValue"
-      >{{ label }}</router-link>
+      <TagList />
     </Xicons>
 
     <Xicons v-if="showValineViews || showWalineViews" :icon="IconEye">
@@ -35,6 +31,7 @@ import { IconUser, IconCalendar, IconFolder, IconTag, IconEye } from '@component
 
 import { formatISODate } from '@utils/other'
 import { useThemeLocaleData } from '@composables/index.js'
+import TagList from './TagList.vue'
 
 function formatCategory(category: string) {
   return convertToPinyin(removeEmptyString(category))

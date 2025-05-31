@@ -3,6 +3,7 @@ import { recoTheme } from 'vuepress-theme-reco'
 import { themeConfig } from './config/index'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
+import { containerPlugin } from '@vuepress/plugin-container'
 
 export default defineUserConfig({
   locales: {
@@ -16,5 +17,17 @@ export default defineUserConfig({
   },
   bundler: viteBundler({}),
   theme: recoTheme(themeConfig),
+  plugins: [
+    containerPlugin({
+      type: 'center',
+      before: () => '<div class="center">',
+      after: () => '</div>',
+    }),
+    containerPlugin({
+      type: 'note',
+      before: info => `<div class="custom-block note"><p class="custom-block-title">${info || '注释信息'}</p>`,
+      after: () => '</div>',
+    }),
+  ],
   // debug: true,
 })
