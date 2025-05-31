@@ -2,12 +2,12 @@
 home: true
 modules:
   - CustomBanner
-  - AIChat
+  # - AIChat
   - Features
   - MdContent
   - Footer
-aiChat:
-  apiKey: "sk-04cf95c686c0465cb3367509354aea42"
+# aiChat:
+#   apiKey: "sk-04cf95c686c0465cb3367509354aea42"
 customBanner:
   bgImage: '/bg.svg'
   title: Yunyaojia
@@ -15,7 +15,7 @@ customBanner:
   tagline: 一个可以随时解决问题的知识库
   buttons:
     - { text: 操作指南, link: '/docs/guide/introduce' }
-    - { text: 解决报错, link: '/docs/theme/series', type: 'plain' }
+    - { text: 解决报错, link: '/docs/problem/introduce', type: 'plain' }
 
 features:
 - title: 过去

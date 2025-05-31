@@ -54,51 +54,15 @@ export const series = {
 
 
 
-  //参考页面侧边栏设置
-  '/docs/theme/': [
+  //解决报错页面侧边栏设置
+  '/docs/problem/': [
     {
-      text: 'Frontmatter',
-      children: ['frontmatter-home', 'frontmatter-page'],
+      text: '介绍',
+      children: ['introduce'],
     },
     {
-      text: '主题配置',
-      children: [
-        {
-          text: 'Locale 配置',
-          children: [
-            'home',
-            'source-dir',
-            'git',
-            'series',
-            'navbar',
-            'comments',
-            'password',
-            'appearance',
-            'social-links',
-            'pages',
-            'doc-search',
-            'auto-set-category',
-            'auto-set-series',
-            'custom-primary-color',
-          ]
-        },
-        {
-          text: '多语言',
-          children: [
-            'multilingual'
-          ]
-        }
-      ],
-    },
-    
-    {
-      text: 'Markdown 扩展',
-      children: [
-        'custom-container',
-        'markdown-task',
-        'markdown-vue-preview',
-        'markdown-file-parse',
-      ],
+      text: '电子处方',
+      children: ['/docs/problem/chufang/dianzichufang'],
     },
   ],
 

@@ -35,7 +35,7 @@ export const themeConfig: RecoThemeData = {
   },
   socialLinks: [
     {
-      icon: 'IconReco',
+      icon: 'IconQQ',
       link: 'https://qm.qq.com/q/szC5XmCQ5G'
     },
     {

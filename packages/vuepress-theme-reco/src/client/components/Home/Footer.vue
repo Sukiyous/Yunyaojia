@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    djc-2025
+    Djc@2025
   </footer>
 </template>
 
