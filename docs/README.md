@@ -15,7 +15,8 @@ customBanner:
   tagline: 一个可以随时解决问题的知识库
   buttons:
     - { text: 操作指南, link: '/docs/guide/introduce' }
-    - { text: 解决报错, link: '/docs/problem/introduce', type: 'plain' }
+    - { text: 解决报错, link: '/docs/problem/introduce' } 
+    - { text: 博客, link: '/posts' }   #  - { text: 博客, link: '/posts', type: 'plain' }
 
 features:
 - title: 过去

@@ -22,7 +22,7 @@ export const themeConfig: RecoThemeData = {
   colorMode: 'light',//主题颜色默认是浅色
   logo: '/logo.png',
   author: 'Doujc',//作者
-  docsRepo: 'https://github.com/Sukiyous/Yunyaojia',//文档仓库
+  docsRepo: 'https://p4mq.bmwwx.cn/ApW7ci',//文档仓库
   docsBranch: 'main',//文档分支
   docsDir: '/docs',//文档目录
   algolia: {
@@ -35,12 +35,20 @@ export const themeConfig: RecoThemeData = {
   },
   socialLinks: [
     {
+      icon: 'IconGuojia',
+      link: 'https://code.nhsa.gov.cn/'//国家医保平台
+    },
+    {
+      icon: 'Iconwx',
+      link: 'https://p4mq.bmwwx.cn/ApW7ci'//微信
+    },
+    {
       icon: 'IconQQ',
-      link: 'https://qm.qq.com/q/szC5XmCQ5G'
+      link: 'https://qm.qq.com/q/szC5XmCQ5G'//qq
     },
     {
       icon: 'IconRevili',
-      link: 'https://www.baidu.com'  // 添加了https://前缀
+      link: 'https://www.baidu.com'  // 百度
     }
   ],
 }
