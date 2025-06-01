@@ -9,7 +9,10 @@ export const series = {
     },
     {
       text:'基础档案',
-      children:['/docs/guide/jichudangan/shangpinguanli'],
+      children:[
+        '/docs/guide/jichudangan/shangpinguanli',
+        '/docs/guide/jichudangan/shangpingtiaojia',
+      ],
     },
     {
       text:'库存管理',
