@@ -1,0 +1,1 @@
+import{u as n,c as e,d as o,e as a,o as s,F as c,r as l,t as u}from"./app-JBwnBJ6-.js";const m={key:0,class:"tag-list"},f={__name:"TagList",setup(_){const t=n().value.tags;return(g,p)=>a(t)&&a(t).length?(s(),e("div",m,[(s(!0),e(c,null,l(a(t),r=>(s(),e("span",{key:r,class:"tag"},u(r),1))),128))])):o("",!0)}};export{f as default};
